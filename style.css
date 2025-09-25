@@ -17,14 +17,30 @@ body {
     margin-left: 25px;
 }
 
-.titulo p {
+.titulo {
+    margin-top: 30px;
     margin-left: 25px;
+}
+
+.titulo span {
+    margin-left: 25spanx;
     margin-top: 27px;
     font-size: 37px;
+    font-style: italic;
+    white-space: nowrap;
+    text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4), 1px 1px 0 #000;
+}
+
+.t-jamal {
+    color: #FFFFFF;
+}
+
+.t-bet {
+    color: #FF8800;
 }
 
 .deposito-btn button {
-    margin: 30px 10px 0px 920px;
+    margin: 30px 10px 0px 1330px;
     width: 90px;
     height: 30px;
     border-radius: 10px;
@@ -66,6 +82,7 @@ body {
 .menu ul li a {
     color: white;
     text-decoration: none;
+    font-size: 19px;
 }
 
 .menu ul li a:hover {
@@ -75,8 +92,10 @@ body {
 }
 
 .pesquisa input {
-    margin-left: 1000px;
+    margin-left: 1420px;
     margin-top: 14px;
+    border-radius: 5px;
+    padding: 5px;
 }
 
 .pesquisa img {
@@ -96,7 +115,7 @@ body {
 }
 
 .jogos {
-    margin-left: 135px;
+    margin-left: 300px;
 }
 
 .jogos p {
@@ -150,7 +169,7 @@ body {
 
 .btn-aposta button {
     width: 390px;
-    margin: 20px 0px 20px 570px;
+    margin: 20px 0px 20px 730px;
     background-color: orange;
     border-radius: 40px;
     color: white;
@@ -164,7 +183,7 @@ body {
 }
 
 .cliente {
-    margin: 20px 40px 0px 40px;
+    margin: 20px 40px 0px 140px;
 }
 
 .cliente img {
@@ -212,4 +231,77 @@ body {
     font-size: 35px;
     text-align: center;
     padding-top: 30px;
+}
+
+
+
+/* Desktop*/
+@media screen and (min-width: 757px) {
+    .menu-hamburguer {
+        display: none;
+        font-size: 30px;
+        background: none;
+        border: none;
+        color: none;
+        cursor: pointer;
+        z-index: 1000;
+    }
+}
+
+/* Mobile */
+@media screen and (max-width: 756px) {
+
+    .deposito-btn button {
+        margin: 30px 10px 0px 120px;
+    }
+
+    .avatar img {
+        margin-top: 25px;
+        margin-left: 15px;
+    }
+
+    .menu-hamburguer {
+        display: block;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .pesquisa input {
+        margin-left: 550px;
+        margin-top: 14px;
+    }
+
+    .jogos {
+        margin-left: 0;
+    }
+
+    .jogos p {
+        margin-left: 50px
+    }
+
+    .card {
+        margin-left: 130px;
+    }
+
+    .card p {
+        margin-left: 15px;
+    }
+
+    .btn-aposta button {
+        margin: 30px 0px 50px 175px;
+    }
+
+    .avaliacao {
+        display: block;
+    }
+
+    .cliente {
+        margin-top: 30px;
+    }
+
+    .cliente h1 {
+        margin-left: -20px;
+    }
 }
