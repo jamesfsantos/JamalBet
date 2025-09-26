@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jamal Bet</title>
+    <script src="https://kit.fontawesome.com/1b6325a2a1.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
     
 </head>
@@ -30,9 +31,11 @@
     </div>
 
     <div class="navbar">
+        <div class="menu-toggle" onclick="document.querySelector('.menu').classList.toggle('active')">
+                <i class="fas fa-bars"></i>
+        </div>
         <div class="menu">
-            <button class="menu-hamburguer" id="menu-toggle" aria-label="Abrir Menu">&#9776; </button>
-            <ul class="itens" id="nav-lista">
+            <ul class="itens">
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Quem Somos</a></li>
                 <li><a href="#">Ligas</a></li>
