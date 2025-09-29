@@ -2,7 +2,10 @@ body {
     margin: 0;
     padding: 0;
     background: #07603E;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
 }
+
 
 .topo {
     height: 100px;
@@ -40,7 +43,7 @@ body {
 }
 
 .deposito-btn button {
-    margin: 30px 10px 0px 1330px;
+    margin: 30px 10px 0px 1270px;
     width: 90px;
     height: 30px;
     border-radius: 10px;
@@ -76,7 +79,7 @@ body {
     display: flex;
     list-style: none;
     padding: 0;
-    gap: 25px;
+    gap: 15px;
     margin-left: 20px;
 }
 
@@ -293,6 +296,10 @@ body {
         margin-left: -20px;
     }
 
+    .navbar {
+        display: block;
+    }
+
     .menu-toggle {
         display: block;
         font-size: 28px;
@@ -303,11 +310,16 @@ body {
 
     .menu {
         display: block;
-        width: 200px;
+        width: 100%;
+        gap: 0px;
         overflow: hidden;
         max-height: 0;
-        transition: max-height 0.4 ease;
+        transition: max-height 0.4s ease;
         z-index: 100; /* Use um valor alto para sobrepor tudo */
+    }
+
+    .menu ul {
+        margin-left: 0px;
     }
 
     .menu.active{
@@ -316,7 +328,6 @@ body {
 
     .itens {
         flex-direction: column;
-        gap: 0px;
         padding: 0px 0px;
         align-items: flex-start;
         z-index: 1000;
@@ -324,7 +335,6 @@ body {
 
     .itens li {
         width: 100%;
-        background-color: #014d05;
         text-align: center;
     }
 
@@ -339,5 +349,13 @@ body {
         background: rgba(255, 255, 255, 0.1);
     }
 
+
+    .pesquisa {
+        display: none;
+    }
+
+    .menu-toggle i {
+        margin: 10px 0px 0px 15px;
+    }
 
 }
