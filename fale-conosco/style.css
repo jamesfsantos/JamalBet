@@ -14,12 +14,25 @@
 }
 
 .fale-conosco {
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
+    margin: 30px;
 }
 
+.fale-conosco p {
+    font-size: 20px;
+}
+
+.fale-icons {
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+}
+
+
 .logo-contato img {
-    width: 200px;
-    height: 200px;
+    width: 300px;
+    height: 300px;
+    margin: 30px;
 }
 
 .formulario-contato {

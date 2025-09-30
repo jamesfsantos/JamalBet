@@ -8,11 +8,22 @@ body {
 
 
 .topo {
-    height: 100px;
+    width: 100%;
     /* border: 1px solid red; */
     display: flex;
     background-color: #107553;
+    justify-content: space-between;
 }
+
+/* .logo-titulo, .avatar-usuario {
+    border: 1px solid red;
+} */
+
+.logo-titulo,
+.avatar-usuario {
+    display: flex;
+}
+
 
 .logo img {
     width: 100px;
@@ -22,12 +33,10 @@ body {
 
 .titulo {
     margin-top: 30px;
-    margin-left: 25px;
+    margin-left: 5px;
 }
 
 .titulo span {
-    margin-left: 25spanx;
-    margin-top: 27px;
     font-size: 37px;
     font-style: italic;
     white-space: nowrap;
@@ -43,12 +52,12 @@ body {
 }
 
 .deposito-btn button {
-    margin: 30px 10px 0px 1270px;
     width: 90px;
     height: 30px;
     border-radius: 10px;
     color: white;
     background-color: orange;
+    margin-top: 30px;
 }
 
 .avatar img {
@@ -73,6 +82,7 @@ body {
     background-color: #107553;
     display: flex;
     position: relative;
+    justify-content: space-between;
 }
 
 .menu ul {
@@ -90,13 +100,11 @@ body {
 }
 
 .menu ul li a:hover {
-    color: gray;
     text-decoration: none;
     cursor: pointer;
 }
 
 .pesquisa input {
-    margin-left: 1350px;
     margin-top: 14px;
     border-radius: 5px;
     padding: 5px;
@@ -110,22 +118,33 @@ body {
 
 .container {
     /* border: 1px solid red; */
-    margin-top: 20px;
     background-image: url("/imagens/campo-bg.png");
     background-repeat: no-repeat;
     background-size: cover;
     margin: 10px 10px 0px 10px;
     border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 50px;
 }
 
+
+
 .jogos {
-    margin-left: 300px;
+    /* border: 1px solid blue; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: auto;
+    margin-bottom: 10px;
 }
 
 .jogos p {
     /* margin-top: 30px; */
     padding-top: 30px;
-    margin-left: 374px;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
@@ -139,9 +158,9 @@ body {
     height: 100px;
     background-color: #10755380;
     /* border: 1px solid red; */
-    margin: 5px 0px 0px 380px;
     display: flex;
     border-radius: 50px;
+    /* border: 1px solid orange; */
 }
 
 .card img {
@@ -171,9 +190,9 @@ body {
     font-size: 31px;
 }
 
+
 .btn-aposta button {
     width: 390px;
-    margin: 20px 0px 20px 730px;
     background-color: orange;
     border-radius: 40px;
     color: white;
@@ -184,29 +203,35 @@ body {
 .avaliacao {
     display: flex;
     padding-bottom: 150px;
+    border: 1px solid red;
+    justify-content: center;
+    gap: 300px;
+    align-items: center;
+    margin-top: 30px;
 }
 
 .cliente {
-    margin: 20px 40px 0px 140px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .cliente img {
     border-radius: 50%;
-    margin-top: 30px;
-    margin-left: 150px;
+
 }
 
 .cliente h1 {
     color: white;
     text-align: center;
     font-size: 25px;
-    margin-left: 120px
+
 }
 
 .box {
     background: #231f1f;
     width: 250px;
-    margin-left: 130px;
     padding: 10px;
     border-radius: 30px;
 }
@@ -250,7 +275,7 @@ body {
 @media screen and (max-width: 756px) {
 
     .deposito-btn button {
-        margin: 30px 10px 0px 120px;
+        margin: 30px 10px 0px 0px;
     }
 
     .avatar img {
@@ -268,20 +293,9 @@ body {
         margin-left: 0;
     }
 
-    .jogos p {
-        margin-left: 50px
-    }
-
-    .card {
-        margin-left: 130px;
-    }
-
-    .card p {
-        margin-left: 15px;
-    }
 
     .btn-aposta button {
-        margin: 30px 0px 50px 175px;
+        margin: 30px 0px 50px 0px;
     }
 
     .avaliacao {
@@ -292,9 +306,7 @@ body {
         margin-top: 30px;
     }
 
-    .cliente h1 {
-        margin-left: -20px;
-    }
+
 
     .navbar {
         display: block;
@@ -315,14 +327,15 @@ body {
         overflow: hidden;
         max-height: 0;
         transition: max-height 0.4s ease;
-        z-index: 100; /* Use um valor alto para sobrepor tudo */
+        z-index: 100;
+        /* Use um valor alto para sobrepor tudo */
     }
 
     .menu ul {
         margin-left: 0px;
     }
 
-    .menu.active{
+    .menu.active {
         max-height: 500px;
     }
 
