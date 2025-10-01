@@ -32,7 +32,7 @@
 .logo-contato img {
     width: 300px;
     height: 300px;
-    margin: 30px;
+    margin: 20px;
 }
 
 .sobre-nos {
@@ -47,9 +47,24 @@
 }
 
 .formulario-contato {
-    border: 1px solid red;
+    /* border: 1px solid red; */
     margin: 20px;
     padding: 30px;
     background: #107553;
     border-radius: 20px;
+    display: flex;    
+    justify-content: center;
+}
+
+.form {
+    border: 5px solid white;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+
+
+/* */
+@media screen and (max-width: 756px) {
+    
 }
