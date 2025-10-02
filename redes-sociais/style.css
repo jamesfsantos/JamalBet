@@ -55,8 +55,14 @@
     gap: 30px;
 }
 
-.instagram, .twitter {
-    width: 450px;
+.instagram blockquote {
+    height: 150px;
+    width: 150px;
+}
+
+.twitter blockquote {
+    height: 250px;
+    width: 250px;
 }
 
 
