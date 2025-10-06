@@ -1,34 +1,85 @@
 .container-time {
-    margin: 20px;
-    /* border: 1px solid red; */
-    background-color: #107553;
-    border-radius: 20px;
+    position: relative;
     display: flex;
-    flex-direction: column;
-    padding: 20px;
-    gap: 50px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 30px;
+    margin: 20px;
+    height: 800px;
 }
 
-.card-time {
-    border: 1px solid red;
-    display: flex ;
-    padding: 20px;
+.container-time .card-time {
+    position: relative;
+    max-width: 300px;
+    height: 215px;
+    background-color: #fff;
+    margin: 30px 10px;
+    padding: 20px 15px;
+
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+    transition: 0.3s ease-in-out;
+    border-radius: 15px;
+}
+
+.container-time .card-time:hover {
+    height: 320px;
+}
+
+
+.container-time .card-time .imagem-logo {
+    position: relative;
+    width: 260px;
+    height: 260px;
+
+    top: -40%;
+    left: 8px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.container-time .card-time .imagem-logo img {
+    max-width: 100%;
+    border-radius: 15px;
+}
+
+.container-time .card-time .descricao {
+    position: relative;
+    top: -140px;
+    padding: 10px 15px;
+    color: #111;
+    text-align: center;
+
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+
+}
+
+.container-time .card-time:hover .descricao {
+    margin-top: 30px;
+    visibility: visible;
+    opacity: 1;
+    transition-delay: 0.2s;
+
 }
 
 .imagem-logo {
-    margin: 20px;
+    text-align: center;
 }
 
 .imagem-logo img {
-    height: 200px;
     width: 200px;
+    height: 200px;
 }
 
 
-.descricao {
-    background-color: rgba(0, 0, 0, 0.4);
-    border-radius: 20px;
-    padding: 20px;
-    font-size: 20px;
-}
+@media screen and (max-width: 756px) {
+    .container-time {
+        height: auto;
+        flex-direction: column;
+    }
 
+}
