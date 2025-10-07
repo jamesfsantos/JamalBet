@@ -85,12 +85,16 @@ body {
     justify-content: space-between;
 }
 
+.menu {
+    margin: 10px;
+}
+
 .menu ul {
     display: flex;
     list-style: none;
     padding: 0;
     gap: 15px;
-    margin-left: 20px;
+    
 }
 
 .menu ul li a {
@@ -102,6 +106,10 @@ body {
 .menu ul li a:hover {
     text-decoration: none;
     cursor: pointer;
+}
+
+.pesquisa {
+    margin: 10px;
 }
 
 .pesquisa input {
