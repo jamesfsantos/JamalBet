@@ -1,0 +1,98 @@
+<script setup lang="ts">
+import CardTime from '@/Components/CardTime.vue';
+
+</script>
+<template>
+
+    <div class="container-time">
+        <CardTime />
+    </div>
+
+</template>
+<style scoped>
+.container-time {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 30px;
+    margin: 20px;
+    height: 800px;
+}
+
+.container-time .card-time {
+    position: relative;
+    max-width: 300px;
+    height: 215px;
+    background-color: #fff;
+    margin: 30px 10px;
+    padding: 20px 15px;
+
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+    transition: 0.3s ease-in-out;
+    border-radius: 15px;
+}
+
+.container-time .card-time:hover {
+    height: 320px;
+}
+
+
+.container-time .card-time .imagem-logo {
+    position: relative;
+    width: 260px;
+    height: 260px;
+
+    top: -40%;
+    left: 8px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.container-time .card-time .imagem-logo img {
+    max-width: 100%;
+    border-radius: 15px;
+}
+
+.container-time .card-time .descricao {
+    position: relative;
+    top: -140px;
+    padding: 10px 15px;
+    color: #111;
+    text-align: center;
+
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+
+}
+
+.container-time .card-time:hover .descricao {
+    margin-top: 30px;
+    visibility: visible;
+    opacity: 1;
+    transition-delay: 0.2s;
+
+}
+
+.imagem-logo {
+    text-align: center;
+}
+
+.imagem-logo img {
+    width: 200px;
+    height: 200px;
+}
+
+
+@media screen and (max-width: 756px) {
+    .container-time {
+        height: auto;
+        flex-direction: column;
+    }
+
+}
+</style>
