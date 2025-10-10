@@ -38,7 +38,7 @@
             </ul>
         </div>
         <div class="pesquisa">
-            <input type="text"><img src="../../imagens/lupa.png">
+            <input type="text"><img src="/public/imagens/lupa.png">
         </div>
     </div>
 

@@ -1,4 +1,6 @@
-<script></script>
+<script setup lang="ts">
+
+</script>
 
 <template>
     <div class="container">
@@ -8,10 +10,10 @@
                         <p>La Liga EA SPORTS: Camp Nou, 20:00, 24/09/25</p>
                     </div>
                     <div class="card">
-                        <img src="../../imagens/barcelona-icon.png">
+                        <img src="/public/imagens/barcelona-icon.png">
                         <b>0</b>
                         <p>BAR ᵛˢ MAD</p> <b>0</b>
-                        <img src="../../imagens/realmadrid-icon.png">
+                        <img src="/public/imagens/realmadrid-icon.png">
                     </div>
                 </div>
 
@@ -20,10 +22,10 @@
                         <p>Premier League: Anfield, 18:00, 24/09/25</p>
                     </div>
                     <div class="card">
-                        <img src="../../imagens/liverpool-icon.png">
+                        <img src="/public/imagens/liverpool-icon.png">
                         <b>0</b>
                         <p>LIV ᵛˢ CHE</p> <b>0</b>
-                        <img src="../../imagens/chelsea-icon.png">
+                        <img src="/public/imagens/chelsea-icon.png">
                     </div>
                 </div>
 
@@ -33,10 +35,10 @@
                         <p>Bundesliga: Allianz Arena, 15:00, 24/09/25</p>
                     </div>
                     <div class="card">
-                        <img src="../../imagens/bayern-icon.png">
+                        <img src="/public/imagens/bayern-icon.png">
                         <b>0</b>
                         <p>BAY ᵛˢ DOR</p> <b>0</b>
-                        <img src="../../imagens/dortmund-icon.png">
+                        <img src="/public/imagens/dortmund-icon.png">
                     </div>
                 </div>
             </div>
@@ -50,39 +52,39 @@
         <div class="avaliacao">
             <div class="cliente">
                 <div class="img-nome">
-                    <img src="../../imagens/cr7.jpg">
+                    <img src="/public/imagens/cr7.jpg">
                     <h1>Cristiano Ronaldo</h1>
                 </div>
                 <div class="box">
                     <p>"A melhor casa de apostas <br>
                         do Brasil, recomendo jogar!"</p>
-                    <img src="../../imagens/star.png">
+                    <img src="/public/imagens/star.png">
                 </div>
             </div>
 
             <div class="cliente">
                 <div class="img-nome">
 
-                    <img src="../../imagens/messi.jpg">
+                    <img src="/public/imagens/messi.jpg">
                     <h1>Lionel Messi</h1>
                 </div>
                 <div class="box">
                     <p>"Simplesmente não consigo parar, <br>
                         essa casa é a melhor que temos!"</p>
-                    <img src="../../imagens/star.png">
+                    <img src="/public/imagens/star.png">
                 </div>
             </div>
 
             <div class="cliente">
                 <div class="img-nome">
 
-                    <img src="../../imagens/neymar.jpg">
+                    <img src="/public/imagens/neymar.jpg">
                     <h1>Neymar Júnior</h1>
                 </div>
                 <div class="box">
                     <p>"Ja apresentei para todos os <br>
                         meus parentes, sou fã nº1!"</p>
-                    <img src="../../imagens/star.png">
+                    <img src="/public/imagens/star.png">
                 </div>
             </div>
         </div>

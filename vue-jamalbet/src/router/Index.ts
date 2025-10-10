@@ -1,8 +1,8 @@
 import { createWebHistory, createRouter } from "vue-router";
-import Home from "@/views/Home.vue";
 import FaleConosco from "@/views/FaleConosco.vue";
 import RedesSociais from "@/views/RedesSociais.vue";
 import Times from "@/views/Times.vue";
+import Home from "@/views/Home.vue";
 
 
 const routes = [
